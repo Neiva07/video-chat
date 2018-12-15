@@ -68,7 +68,7 @@ function initSocket(socket) {
     return socket;
 }
 
-module.export.run = config => {
+module.exports.run = config => {
     server.listen(config.PORT);
     console.log(`Server is listening at :${config.PORT}`)
     io.listen(server, {log:true})
